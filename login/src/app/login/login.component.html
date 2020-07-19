@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-8 vertical-center">
+        <form class="form-container">
+          <div class="heading">
+            <h4>Login</h4>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail1">Email address</label>
+            <input type="email" [(ngModel)]="userData.email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" size="35">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" [(ngModel)]="userData.password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          </div>
+          <button type="submit" (click)="loginUser()" class="btn mybtn">Login</button>
+          <div *ngIf="show" style="margin-top: 5px;">
+            <p style="color: red;">Invalid email or password!!</p>
+          </div>
+          <p class="registerP">Don't have an account? <a style="color: purple;" routerLink="/register" routerLinkActive="active">Register</a></p>
+        </form>
+      </div>
+      <div class="col-4 col-right vertical-center">
+        <div>
+          <p class="dummyText">Lorem Ipsum is simply dummy text of the printing and typemen book. It has survived not only five centuries, but also em Ipsum passages, and more recently with desktop publishing software like Aldus
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-8 vertical-center">
+        <form class="form-container">
+          <div class="heading">
+            <h4>Register</h4>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail1">Email address</label>
+            <input type="email" [(ngModel)]="userData.email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" size="35">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" [(ngModel)]="userData.password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <button (click)="registerUser()" type="submit" class="btn mybtn">Register</button>
+          <p class="registerP">Already have an account? <a style="color: purple;" routerLink="/login" routerLinkActive="active">Login</a></p>
+        </form>
+      </div>
+      <div class="col-4 col-right vertical-center">
+        <div>
+          <p class="dummyText">Lorem Ipsum is simply dummy text of the printing and typemen book. It has survived not only five centuries, but also em Ipsum passages, and more recently with desktop publishing software like Aldus
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
